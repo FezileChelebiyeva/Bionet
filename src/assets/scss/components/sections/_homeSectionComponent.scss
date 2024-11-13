@@ -1,0 +1,105 @@
+.homeSection {
+  width: 100%;
+  background: linear-gradient(90deg, #587abc 9%, #01c3cd 86%);
+  .container {
+    .row {
+      justify-content: space-between;
+      .homeSectionLeft {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .homeSectionTitle {
+          color: #fff;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 48.41px;
+          text-align: left;
+          color: #000000;
+          margin-bottom: 16px;
+          color: #fff;
+        }
+        .homeSectionText {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16.94px;
+          text-align: left;
+          margin-bottom: 40px;
+        }
+        .homeSectionBtn {
+          background-color: #ffffff;
+          width: 254px;
+          height: 56px;
+          padding: 18px 79px;
+          gap: 10px;
+          border-radius: 10px;
+          color: #000;
+          border-width: 0;
+          transition: all 0.3s;
+          cursor: pointer;
+          &:hover {
+            background: #8b9dc1;
+            color: #fff;
+          }
+        }
+      }
+      .homeSectionRight {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 993px) {
+    .container {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        .homeSectionLeft {
+          width: 90%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          .homeSectionTitle,
+          .homeSectionText,
+          .homeSectionBtn {
+            text-align: center;
+          }
+        }
+        .homeSectionRight {
+          width: 100%;
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      .row {
+        .homeSectionLeft {
+          .homeSectionTitle {
+            font-size: 30px;
+            line-height: 32px;
+          }
+          .homeSectionBtn{
+            width: 200px;
+            padding: 18px 60px;            
+          }
+        }
+      }
+    }
+  }
+}

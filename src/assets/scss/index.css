@@ -1,0 +1,863 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 83%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    padding: 19px 0;
+    font-size: 22px;
+  }
+}
+.advertising {
+  margin: 80px 0;
+}
+@media (max-width: 1024px) {
+  .advertising {
+    margin: 40px 0;
+  }
+  .advertising .container .row {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .advertising .container {
+    padding: 0;
+  }
+}
+.formGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.formGroup .formInputGroup {
+  width: 100%;
+  height: 48px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
+}
+
+.lableInput {
+  color: rgba(0, 0, 0, 0.3137254902);
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+  text-align: left;
+}
+
+.header {
+  width: 100%;
+}
+.header .headerTop {
+  width: 100%;
+  background: linear-gradient(90deg, #587abc 9%, #01c3cd 86%);
+  height: 60px;
+}
+.header .headerTop .container .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.header .headerTop .container .row .headerTopContext {
+  display: flex;
+  gap: 10px;
+}
+.header .headerTop .container .row .headerTopContext a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+.header .headerBottom {
+  width: 100%;
+  height: 88px;
+}
+.header .headerBottom .container .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.header .headerBottom .container .row .navList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+.header .headerBottom .container .row .navList .navLinkItem {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: left;
+}
+.header .headerBottom .container .row .navLeft {
+  display: flex;
+  align-items: center;
+  gap: 67px;
+}
+
+.footer {
+  width: 100%;
+  background: linear-gradient(90deg, #587abc 9%, #01c3cd 86%);
+}
+.footer .container .footerContet {
+  width: 100%;
+  height: 100%;
+  padding: 44px 96px;
+}
+.footer .container .footerContet .row {
+  gap: 101px;
+}
+.footer .container .footerContet .row .footterLeft {
+  padding-bottom: 27px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 310px;
+}
+.footer .container .footerContet .row .footterLeft .footterLeftTop {
+  width: 100%;
+}
+.footer .container .footerContet .row .footterLeft .footterLeftTop .logoIcon {
+  width: 178px;
+}
+.footer .container .footerContet .row .footterLeft .footterLeftBootom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .footerContet .row .footterLeft .footterLeftBootom .socialIcon {
+  width: 60px;
+  height: 60px;
+}
+.footer .container .footerContet .row .footterRight {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .container .footerContet .row .footterRight .footerNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .container .footerContet .row .footterRight .footerNavList .footerNavItemTitle {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: left;
+}
+.footer .container .footerContet .row .footterRight .footerNavList .footerNavItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .container .footerContet .row .footterRight .footerNavList .footerNavItem .footerNavItemLink {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  cursor: pointer;
+}
+.footer .container .footerContet .footerBottom {
+  width: 100%;
+  display: flex;
+  border-top: #fff 1px solid;
+  padding-top: 42px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .container .footerContet .footerBottom .copyrightText {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+.homeSection {
+  width: 100%;
+  background: linear-gradient(90deg, #587abc 9%, #01c3cd 86%);
+}
+.homeSection .container .row {
+  justify-content: space-between;
+}
+.homeSection .container .row .homeSectionLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.homeSection .container .row .homeSectionLeft .homeSectionTitle {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.homeSection .container .row .homeSectionLeft .homeSectionText {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.homeSection .container .row .homeSectionLeft .homeSectionBtn {
+  background-color: #ffffff;
+  width: 254px;
+  height: 56px;
+  padding: 18px 79px;
+  gap: 10px;
+  border-radius: 10px;
+  color: #000;
+  border-width: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.homeSection .container .row .homeSectionLeft .homeSectionBtn:hover {
+  background: #8b9dc1;
+  color: #fff;
+}
+.homeSection .container .row .homeSectionRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeSection .container .row .homeSectionRight img {
+  max-width: 100%;
+  height: auto;
+}
+
+.partnersSectionComponent {
+  width: 100%;
+  background: linear-gradient(90deg, #587abc 9%, #01c3cd 86%);
+  padding-bottom: 80px;
+}
+.partnersSectionComponent .container .partnersSectionRow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partnersSectionComponent .container .partnersSectionRow .partnersSectionHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.partnersSectionComponent .container .partnersSectionRow .partnersSectionHeader .partnersSectionText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: center;
+  color: #fff;
+}
+.partnersSectionComponent .container .partnersSectionRow .partnersSectionLogos {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 53px;
+  gap: 10px;
+}
+.partnersSectionComponent .container .partnersSectionRow .partnersSectionLogos .partnersSectionTop {
+  width: 100%;
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+}
+.partnersSectionComponent .container .partnersSectionRow .partnersSectionLogos .partnersSectionButtom {
+  width: 100%;
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.partnersLogo {
+  width: auto; /* Genişliği otomatik yaparak orantılı kalmasını sağla */
+  height: auto; /* Yüksekliği otomatik yaparak orantılı kalmasını sağla */
+  max-width: 150px; /* Konteyner genişliğini aşmamasını sağla */
+  max-height: 150px; /* Konteyner yüksekliğini aşmamasını sağla */
+  object-fit: contain; /* Resmin orantılarını koruyarak alanı doldurmasını sağla */
+}
+
+.OurlatestProjectsSectionComponent {
+  margin: 80px 0;
+  width: 100%;
+}
+.OurlatestProjectsSectionComponent .container .OurlatestProjectsSectionContents {
+  width: 100%;
+}
+.OurlatestProjectsSectionComponent .container .OurlatestProjectsSectionContents .OurlatestProjectsSectionHeader {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.OurlatestProjectsSectionComponent .container .OurlatestProjectsSectionContents .OurlatestProjectsSectionImage {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.OurlatestProjectsSectionComponent .container .OurlatestProjectsSectionContents .OurlatestProjectsSectionImage .OurLatestImage {
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+}
+
+.DevelopmentOfWebsites {
+  width: 100%;
+}
+.DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents .DevelopmentOfWebsitesHeader {
+  width: 100%;
+  text-align: center;
+}
+.DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents .DevelopmentOfWebsitesCardBox {
+  margin: 80px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents .DevelopmentOfWebsitesCardBox .DevelopmentOfWebsitesCard {
+  background-color: #e1f5f3;
+  border-radius: 10px;
+  max-width: 390px;
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents .DevelopmentOfWebsitesCardBox .DevelopmentOfWebsitesCard .DevelopmentOfWebsitesIcon {
+  width: auto;
+  height: auto;
+  max-width: 142px;
+  max-height: 142px;
+  object-fit: cover;
+}
+.DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents .DevelopmentOfWebsitesCardBox .DevelopmentOfWebsitesCard .DevelopmentOfWebsitesCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents .DevelopmentOfWebsitesCardBox .DevelopmentOfWebsitesCard .DevelopmentOfWebsitesCardContent .DevelopmentOfWebsitesTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: center;
+}
+.DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents .DevelopmentOfWebsitesCardBox .DevelopmentOfWebsitesCard .DevelopmentOfWebsitesCardContent .DevelopmentOfWebsitesText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: center;
+}
+
+.OurTeamSectionComponent {
+  width: 100%;
+  background-color: #e1f5f3;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 74px 0;
+  justify-content: space-between;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentContext {
+  max-width: 50%;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 400px;
+  gap: 24px;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentContext .OurTeamSectionComponentDescription {
+  max-width: 439px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox .OurTeamSectionComponentImageLeft {
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-self: flex-start;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox .OurTeamSectionComponentImageLeft .personCard {
+  width: 160px;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox .OurTeamSectionComponentImageLeft .personCard .personImage {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox .OurTeamSectionComponentImageLeft .personCard .personName {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: center;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox .OurTeamSectionComponentImageLeft .personCard .personInfo {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: center;
+}
+.OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox .OurTeamSectionComponentImageRight {
+  width: 76%;
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.OurActivity {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.OurActivity .OurActivityHeader {
+  width: 100%;
+  text-align: center;
+  margin: 80px 0;
+}
+.OurActivity .OurActivityContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4fde7;
+}
+.OurActivity .OurActivityContents .container .OurActivityCardBox {
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.OurActivity .OurActivityContents .container .OurActivityCardBox .OurActivityCard {
+  background-color: #e1f5f3;
+  border-radius: 10px;
+  max-width: 390px;
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.OurActivity .OurActivityContents .container .OurActivityCardBox .OurActivityCard .OurActivityIcon {
+  width: auto;
+  height: auto;
+  max-width: 142px;
+  max-height: 142px;
+  object-fit: cover;
+}
+.OurActivity .OurActivityContents .container .OurActivityCardBox .OurActivityCard .OurActivityCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.OurActivity .OurActivityContents .container .OurActivityCardBox .OurActivityCard .OurActivityCardContent .OurActivityTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: center;
+}
+.OurActivity .OurActivityContents .container .OurActivityCardBox .OurActivityCard .OurActivityCardContent .OurActivityText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: center;
+}
+
+.OurServicesSection {
+  width: 100%;
+}
+.OurServicesSection .container .OurServicesSectionContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.OurServicesSection .container .OurServicesSectionContents .OurServicesSectionHeader {
+  width: 100%;
+  text-align: center;
+}
+.OurServicesSection .container .OurServicesSectionContents .OurServicesSectionCardBox {
+  margin: 80px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.OurServicesSection .container .OurServicesSectionContents .OurServicesSectionCardBox .OurServicesSectionCard {
+  background-color: #e1f5f3;
+  border-radius: 10px;
+  max-width: 390px;
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.OurServicesSection .container .OurServicesSectionContents .OurServicesSectionCardBox .OurServicesSectionCard .OurServicesSectionIcon {
+  width: auto;
+  height: auto;
+  max-width: 142px;
+  max-height: 142px;
+  object-fit: cover;
+}
+.OurServicesSection .container .OurServicesSectionContents .OurServicesSectionCardBox .OurServicesSectionCard .OurServicesSectionCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.OurServicesSection .container .OurServicesSectionContents .OurServicesSectionCardBox .OurServicesSectionCard .OurServicesSectionCardContent .OurServicesSectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: center;
+}
+.OurServicesSection .container .OurServicesSectionContents .OurServicesSectionCardBox .OurServicesSectionCard .OurServicesSectionCardContent .OurServicesSectionText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: center;
+}
+
+.priceQuoteSection {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.priceQuoteSection .container .priceQuoteContent {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 46px 205px;
+}
+.priceQuoteSection .container .priceQuoteContent .priceQuoteTitle {
+  width: 100%;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.priceQuoteSection .container .priceQuoteContent .priceQuoteTitle .priceQuoteText {
+  max-width: 500px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: center;
+}
+.priceQuoteSection .container .priceQuoteContent .form {
+  width: 100%;
+}
+.priceQuoteSection .container .priceQuoteContent .form .formInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.priceQuoteSection .container .priceQuoteContent .form .formTextArea {
+  margin-top: 24px;
+  width: 100%;
+}
+.priceQuoteSection .container .priceQuoteContent .form .formTextArea .formTextarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
+  height: 124px;
+  resize: none;
+}
+.priceQuoteSection .container .priceQuoteContent .form .PriceQuoteFormBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+.priceQuoteSection .container .priceQuoteContent .form .PriceQuoteFormBtnContainer .PriceQuoteFormBtn {
+  display: flex;
+  width: 273px;
+  height: 56px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #008b85;
+  color: #fff;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutOurCompany {
+  width: 100%;
+  margin: 80px 0;
+  padding: 0 10px;
+}
+.aboutOurCompany .container .row {
+  width: 100%;
+  justify-content: space-between;
+}
+.aboutOurCompany .container .row .aboutOurCompanyContentLeft {
+  width: 50%;
+  padding: 40px;
+}
+.aboutOurCompany .container .row .aboutOurCompanyContentLeft .aboutOurCompanyContentLeftTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.aboutOurCompany .container .row .aboutOurCompanyContentLeft .aboutOurCompanyContentLeftText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+.aboutOurCompany .container .row .aboutOurCompanyContentRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutOurCompany .container .row .aboutOurCompanyContentRight .aboutOurCompanyContentRightImg {
+  width: 282px;
+  height: 282px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+.aboutOurCompany .container .row .aboutOurCompanyContentRight .imgTitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.aboutOurCompany .container .row .aboutOurCompanyContentRight .imgText {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: center;
+}
+
+.contactUs {
+  width: 100%;
+  margin: 80px 0;
+}
+.contactUs .container .contactUsTextandTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+.contactUs .container .contactUsTextandTitle .contactUsText {
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: center;
+}
+.contactUs .container .row {
+  gap: 40px;
+}
+.contactUs .container .row .map {
+  width: 50%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.contactUs .container .row .writeUs {
+  width: 50%;
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+}
+.contactUs .container .row .writeUs .writeUsTitle {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.74px;
+  text-align: center;
+}
+.contactUs .container .row .writeUs .formInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.contactUs .container .row .writeUs .formTextArea {
+  margin-top: 24px;
+  width: 100%;
+}
+.contactUs .container .row .writeUs .formTextArea .formTextarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
+  height: 124px;
+  resize: none;
+  margin-top: 4px;
+}
+.contactUs .container .row .writeUs .PriceQuoteFormBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+.contactUs .container .row .writeUs .PriceQuoteFormBtnContainer .PriceQuoteFormBtn {
+  display: flex;
+  width: 273px;
+  height: 56px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #008b85;
+  color: #fff;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+}
+.contactUs .container .contactUsBottom {
+  width: 100%;
+  background-color: #e1f5f3;
+  padding: 60px 135px;
+  margin: 80px 0;
+  border-radius: 10px;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox {
+  width: 100%;
+  display: flex;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  gap: 9px;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard .contactUsCardtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.1px;
+  text-align: center;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard .imgContactContainer {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard .imgContactContainer .imgContact {
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard .contactUsCardInfoText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+  text-align: center;
+  width: 50%;
+}
+
+/*# sourceMappingURL=index.css.map */

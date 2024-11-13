@@ -1,0 +1,64 @@
+.OurServicesSection {
+    width: 100%;
+    .container {
+      .OurServicesSectionContents {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .OurServicesSectionHeader {
+          width: 100%;
+          text-align: center;
+        }
+        .OurServicesSectionCardBox {
+          margin: 80px 0;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 60px;
+          .OurServicesSectionCard {
+            background-color: #e1f5f3;
+            border-radius: 10px;
+            max-width: 390px;
+            height: 364px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+            .OurServicesSectionIcon {
+              width: auto;
+              height: auto;
+              max-width: 142px;
+              max-height: 142px;
+              object-fit: cover;
+            }
+            .OurServicesSectionCardContent {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 20px;
+              gap: 20px;
+              .OurServicesSectionTitle {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24.2px;
+                text-align: center;
+              }
+              .OurServicesSectionText {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.94px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+// Global styles
+@import "./base";
+@import "./mixin";
+
+// Page style
+
+@import "pages/home";
+
+// Components
+
+@import "components/header";
+@import "components/footer";
+@import "components/sections/homeSectionComponent";
+@import "components/sections/partnersSectionComponent";
+@import "components/sections/ourlatestProjectsSectionComponent";
+@import "components/sections/developmentOfWebsites";
+@import "components/sections/ourTeamSectionComponet";
+@import "components/sections/ourActivitySection";
+@import "components/sections/ourServicesSection";
+@import "components/sections/priceQuoteSection";
+@import "components/sections/aboutOurCompany";
+@import "components/sections/_contactUs.scss";

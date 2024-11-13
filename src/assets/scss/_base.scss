@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 340px;
+}
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1680px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  @media (max-width: 993px) {
+    padding: 0 45px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 35px;
+  }
+  @media (max-width: 576px) {
+    padding: 0 25px;
+  }
+  @media (max-width: 480px) {
+    padding: 0 20px;
+  }
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    padding: 19px 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.formGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .formInputGroup {
+    width: 100%;
+    height: 48px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #00000050;
+  }
+}
+
+.lableInput {
+  color: #00000050;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+  text-align: left;
+}
