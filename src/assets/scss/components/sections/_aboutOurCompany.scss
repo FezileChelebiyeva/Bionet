@@ -3,6 +3,9 @@
   margin: 80px 0;
   padding: 0 10px;
   .container {
+    .title {
+      margin-bottom: 80px;
+    }
     .row {
       width: 100%;
       justify-content: space-between;
@@ -48,6 +51,45 @@
           font-weight: 400;
           line-height: 16.94px;
           text-align: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 993px) {
+    .container {
+      .title {
+        margin-bottom: 30px;
+      }
+      .row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        .aboutOurCompanyContentLeft {
+          width: 100%;
+          .aboutOurCompanyContentLeftTitle {
+            text-align: center;
+          }
+          .aboutOurCompanyContentLeftText {
+            text-align: center;
+          }
+        }
+        .aboutOurCompanyContentRight {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      .title {
+        margin-bottom: 15px;
+      }
+      .row {
+        .aboutOurCompanyContentRight {
+          .aboutOurCompanyContentRightImg {
+            width: 240px;
+            height: 240px;
+          }
         }
       }
     }

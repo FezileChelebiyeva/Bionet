@@ -24,44 +24,46 @@ const PriceQuoteSection = () => {
               istəyirsizsə bizə yazın və qiymət təklifi alın
             </p>
           </div>
-          <form className="form" onSubmit={handleSubmit}>
-            <div className="formInput">
-              <Input
-                id={"name"}
-                change={name}
-                setValue={setName}
-                type={"text"}
-                lable={"Ad və soyadınız"}
-                placheHolder={"Adınızı daxil edin"}
-              />
-              <Input
-                id={"number"}
-                change={number}
-                setValue={setNumber}
-                type={"text"}
-                lable={"Əlaqə nömrəniz"}
-                placheHolder={"Əlaqə nömrənizi daxil edin"}
-              />
-            </div>
-            <div className="formTextArea">
-              <label className="lableInput" htmlFor="message">
-                Necə bir məhsul istəyirsiz
-              </label>
-              <textarea
-                className="formTextarea"
-                placeholder="Məhsul haqqında"
-                id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
-              />
-            </div>
-            <div className="PriceQuoteFormBtnContainer">
-              <button className="PriceQuoteFormBtn" type="submit">
-                Gönder
-              </button>
-            </div>
-          </form>
+          <div className="form-box">
+            <form className="form" onSubmit={handleSubmit}>
+              <div className="formInput">
+                <Input
+                  id={"name"}
+                  change={name}
+                  setValue={setName}
+                  type={"text"}
+                  lable={"Ad və soyadınız"}
+                  placheHolder={"Adınızı daxil edin"}
+                />
+                <Input
+                  id={"number"}
+                  change={number}
+                  setValue={setNumber}
+                  type={"text"}
+                  lable={"Əlaqə nömrəniz"}
+                  placheHolder={"Əlaqə nömrənizi daxil edin"}
+                />
+              </div>
+              <div className="formTextAreaGroup">
+                <label className="lableInput" htmlFor="message">
+                  Necə bir məhsul istəyirsiz
+                </label>
+                <textarea
+                  className="formTextarea"
+                  placeholder="Məhsul haqqında"
+                  id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="PriceQuoteFormBtnContainer">
+                <button className="PriceQuoteFormBtn" type="submit">
+                  Gönder
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

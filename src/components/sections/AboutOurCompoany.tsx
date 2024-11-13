@@ -4,7 +4,7 @@ const AboutOurCompany = () => {
   return (
     <section className="aboutOurCompany">
       <div className="container">
-        <h2 className="title" style={{ marginBottom: "60px" }}>
+        <h2 className="title">
           Şirkətimiz haqqında
         </h2>
         <div className="row">

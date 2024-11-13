@@ -20,6 +20,7 @@
     }
     .row {
       gap: 40px;
+      justify-content: space-between;
       .map {
         width: 50%;
         background-color: #f5f5f5;
@@ -45,7 +46,7 @@
           justify-content: center;
           gap: 24px;
         }
-        .formTextArea {
+        .formTextAreaGroup {
           margin-top: 24px;
           width: 100%;
 
@@ -84,7 +85,7 @@
     .contactUsBottom {
       width: 100%;
       background-color: #e1f5f3;
-      padding: 60px 135px;
+      padding: 60px;
       margin: 80px 0;
       border-radius: 10px;
       .contactUsCardBox {
@@ -122,6 +123,87 @@
             text-align: center;
             width: 50%;
           }
+        }
+      }
+    }
+  }
+  @media (max-width: 993px) {
+    margin: 40px 0;
+    .container {
+      .contactUsTextandTitle {
+        margin-bottom: 40px;
+        .contactUsText {
+          width: 80%;
+          margin-top: -15px;
+        }
+      }
+      .row {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -20px;
+        .map {
+          width: 100%;
+        }
+        .writeUs {
+          width: 100%;
+        }
+      }
+      .contactUsBottom {
+        padding: 40px;
+        margin: 40px 0;
+        .contactUsCardBox {
+          flex-direction: column;
+          row-gap: 25px;
+          .contactUsCard {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    margin: 20px 0;
+    .container {
+      .contactUsTextandTitle {
+        margin-bottom: 15px;
+        .contactUsText {
+          width: 100%;
+        }
+      }
+      .row {
+        flex-direction: column;
+        align-items: center;
+        .map {
+          width: 100%;
+        }
+        .writeUs {
+          width: 100%;
+          padding: 20px;
+          .writeUsTitle {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          .formInput {
+            flex-direction: column;
+            row-gap: 0;
+            .formGroup {
+              margin-top: 10px;
+              .formInputGroup {
+                height: 40px;
+              }
+            }
+          }
+          .formTextAreaGroup {
+            .formTextarea {
+              height: 80px;
+            }
+          }
+        }
+      }
+      .contactUsBottom {
+        margin: 20px 0;
+        .contactUsCardBox {
+          row-gap: 25px;
         }
       }
     }

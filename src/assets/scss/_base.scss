@@ -75,12 +75,13 @@ button {
     gap: 10px;
     border-radius: 10px;
     border: 1px solid #00000050;
+    outline: 0;
   }
 }
 
 .lableInput {
   color: #00000050;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.1px;

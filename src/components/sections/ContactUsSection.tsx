@@ -109,7 +109,7 @@ const ContactUsSection = () => {
                   placheHolder={"Telefon nömrənizi daxil edin"}
                 />
               </div>
-              <div className="formTextArea">
+              <div className="formTextAreaGroup">
                 <label className="lableInput" htmlFor="message">
                   Necə bir məhsul istəyirsiz
                 </label>
