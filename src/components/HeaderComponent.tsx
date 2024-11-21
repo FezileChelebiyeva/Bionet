@@ -1,17 +1,11 @@
-import React, { useState } from "react";
-import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { MdLocationPin } from "react-icons/md";
-import { BsTelephoneFill } from "react-icons/bs";
+import { useState } from "react";
 import Logo from "../assets/images/bionetLogoFooter.png";
-import LogoTwo from "../assets/images/bionetLogo.png";
 import { IoSearch } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const HeaderComponent = () => {
-  const [menuBar, setMenuBar] = useState(true);
-  const [showInput, setShowInput] = useState(false);
-
+  const [menuBar, setMenuBar] = useState(false);
   const location = useLocation();
 
   const getHeaderStyleAndLogo = () => {
@@ -45,113 +39,55 @@ const HeaderComponent = () => {
     { path: "/contactsPage", label: "Contacts" },
   ];
 
-  const handleIconClick = () => {
-    setShowInput(!showInput);
-  };
-
   return (
-    <header className="header">
-      <div className="headerBottom" style={{ ...style }}>
-        <div className="container">
-          <div className="row">
-            <a className="logo" href="./">
+    <header id="header" style={{ ...style }}>
+      <div className="container">
+        <div className="header">
+          <div className="logo">
+            <a href="./">
               <img src={logo} alt="Bionet Logo" />
             </a>
-            <ul className="navList">
-              {navItems.map((item) => (
-                <li
-                  className="navItem"
-                  style={{ margin: "10px 0" }}
-                  key={item.label}
-                >
-                  <a
-                    className="navLinkItem"
-                    href={item.path}
-                    style={{
-                      color: location.pathname === item.path ? "black" : color,
-                    }}
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <div className="navLeft">
-              <IoSearch size={24} color={color} />
+          </div>
+          <div className={`navbar  ${menuBar ? "active_navbar" : ""}`}>
+            <div className="container">
+              <ul className="navlink_lists">
+                {navItems.map((nav, i) => (
+                  <li key={i} className="nav_list">
+                    <a
+                      onClick={() => setMenuBar(false)}
+                      className="link"
+                      href={nav.path}
+                      style={{
+                        color: location.pathname === nav.path ? "black" : color,
+                      }}
+                    >
+                      {nav.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="header_end">
+            <div className="nav_left">
+              <IoSearch cursor={"pointer"} size={24} color={color} />
               <a className="navLinkItem" style={{ color: color }} href="./">
                 En
               </a>
             </div>
-            <div className="menu-control">
+            <div
+              className={`icon_button ${menuBar ? "active" : ""}`}
+              onClick={() => setMenuBar(!menuBar)}
+            >
               {menuBar ? (
-                <div onClick={() => setMenuBar(false)} className="menu-bar">
-                  <i className="fa-solid fa-bars"></i>
-                </div>
+                <HiX color="#fff" size={"30px"} className="icon close_icon" />
               ) : (
-                <div onClick={() => setMenuBar(true)} className="close">
-                  <i className="fa-solid fa-x"></i>
-                </div>
+                <HiMenu color="#fff" size={"30px"} className="icon menu_icon" />
               )}
             </div>
           </div>
         </div>
       </div>
-      {!menuBar && (
-        <div className="mobile-header">
-          <div className="top">
-            <div className="container">
-              <div className="top-content">
-                <a className="logo" href="./">
-                  <img src={logo} alt="Bionet Logo" />
-                </a>
-                <div className="navLeft">
-                  <IoSearch size={24} color={color} onClick={handleIconClick} />
-                  <a className="langItem" style={{ color: color }} href="./">
-                    En
-                  </a>
-                </div>
-                <div className="menu-control">
-                  {menuBar ? (
-                    <div onClick={() => setMenuBar(false)} className="menu-bar">
-                      <i className="fa-solid fa-bars"></i>
-                    </div>
-                  ) : (
-                    <div onClick={() => setMenuBar(true)} className="close">
-                      <i className="fa-solid fa-x"></i>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="bottom">
-            <div className="container">
-              <div className="lists">
-                <ul className="navList">
-                  {navItems.map((item) => (
-                    <li
-                      className="navItem"
-                      style={{ margin: "10px 0" }}
-                      key={item.label}
-                    >
-                      <a
-                        className="navLinkItem"
-                        href={item.path}
-                        style={{
-                          color:
-                            location.pathname === item.path ? "black" : color,
-                        }}
-                      >
-                        {item.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   );
 };
