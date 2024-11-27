@@ -25,9 +25,9 @@ function App() {
 
   return (
     <div>
-      {/* {loading ? (
+      {loading ? (
         <LoadingPage />
-      ) : ( */}
+      ) : (
         <>
           <HeaderComponent />
           <Routes>
@@ -39,7 +39,7 @@ function App() {
           </Routes>
           <Footer />
         </>
-      {/* )} */}
+      )}
     </div>
   );
 }
